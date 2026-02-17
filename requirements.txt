@@ -3,9 +3,8 @@ PyPDF2
 python-dotenv
 langchain
 langchain-community
-langchain-pinecone
-langchain-core
-# langchain-chains
 langchain-text-splitters
-pinecone-client
+langchain-pinecone
+pinecone
 sentence-transformers
+langsmith

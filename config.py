@@ -37,3 +37,7 @@ def validate_config():
     if not PINECONE_API_KEY:
         raise ValueError("PINECONE_API_KEY environment variable is not set")
     return True
+
+
+EMBEDDING_MODEL_NAME = "BAAI/bge-large-en-v1.5"  # 1024 dimensions
+EMBEDDING_DIMENSION = 1024
