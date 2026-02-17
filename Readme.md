@@ -1,4 +1,4 @@
-# 📄🧠 RAG Chatbot with Pinecone + LLaMA
+# 📄🧠 RAG Chat Assistant with Pinecone + LLaMA
 
 A Retrieval-Augmented Generation (RAG) chatbot that allows users to upload PDF documents and interactively ask questions about their content. Built with a **modular architecture** using LangChain, Pinecone, Ollama (LLaMA), and Streamlit.
 
