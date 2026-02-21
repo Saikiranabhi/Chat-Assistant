@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: rag-chatbot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: PINECONE_ENVIRONMENT
+        value: us-east-1
