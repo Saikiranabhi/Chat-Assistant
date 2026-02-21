@@ -23,6 +23,8 @@
 # sentence-transformers>=3.0.0
 # langsmith>=0.1.0
 
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.0+cpu
 
 streamlit
 PyPDF2
