@@ -1,0 +1,11 @@
+
+### 2. Create `.dockerignore`
+```
+.env
+venv/
+__pycache__/
+*.pyc
+.git/
+faiss_index/
+uploaded/
+.idea/
