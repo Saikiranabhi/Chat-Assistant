@@ -25,25 +25,20 @@
 #      "--server.headless=true"]
 # ```
 
-
 FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install uv (fast resolver, replaces pip)
 RUN pip install uv
 
-# Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
 
-# Use uv instead of pip
-RUN uv pip install --system -r requirements.txt
+RUN uv pip install --system --no-cache -r requirements.txt
 
-# Pre-download embedding model
 RUN python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')"
 
 COPY . .
